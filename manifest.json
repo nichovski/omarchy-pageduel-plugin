@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "nichovski.pageduel-live-visitors",
+  "name": "PageDuel Live Visitors",
+  "version": "1.0.0",
+  "author": "nichovski",
+  "description": "Shows how many visitors are on your PageDuel-tracked sites right now, via the PageDuel v1 Read API",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "PageDuel Live Visitors",
+    "description": "Total current visitors across every site your PageDuel API key can read, with a per-site breakdown",
+    "category": "Analytics",
+    "allowMultiple": false,
+    "defaults": {
+      "pollIntervalSeconds": 60
+    },
+    "schema": [
+      {
+        "key": "pollIntervalSeconds",
+        "type": "number",
+        "label": "Poll interval (seconds)",
+        "defaultValue": 60
+      }
+    ]
+  }
+}
