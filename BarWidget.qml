@@ -35,6 +35,7 @@ BarWidget {
   }
 
   property bool popupOpen: false
+  function close() { popupOpen = false }
 
   visible: hasCredentials
   implicitWidth: row.implicitWidth + Style.space(14)
